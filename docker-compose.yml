@@ -42,11 +42,10 @@ services:
       - ./client:/app
 
   nginx:
+    restart: always
     build:
       context: ./nginx
       dockerfile: Dockerfile.dev
 
     ports:
-      - "3001:80"
-
-    restart: always
+      - 3001:80
