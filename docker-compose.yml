@@ -48,4 +48,4 @@ services:
       dockerfile: Dockerfile.dev
 
     ports:
-      - 3001:80
+      - "3001:80"
